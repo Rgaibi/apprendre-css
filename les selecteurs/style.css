@@ -1,0 +1,86 @@
+/* Style général de la page */
+body {
+  font-family: Arial, sans-serif; /* Choix de la police pour tout le corps */
+  margin: 20px;                   /* Marge autour de la page */
+  line-height: 1.5;               /* Hauteur des lignes pour lisibilité */
+}
+
+/* Style du titre principal */
+h1.titre-principal {
+  color: darkblue;                /* Couleur du texte du h1 */
+  text-align: center;             /* Centrer le texte horizontalement */
+}
+
+/* Descendants et enfants directs */
+.container .zone p {
+  color: purple;                  /* Tous les paragraphes descendants de .zone */
+}
+
+.container .zone > p {
+  color: orange;                  /* Seulement les paragraphes enfants directs de .zone */
+}
+
+/* Frères */
+h3 + p {
+  color: brown;                   /* Paragraphe juste après un h3 (frère immédiat) */
+}
+
+h3 ~ p {
+  font-style: italic;             /* Tous les paragraphes frères suivants d’un h3 */
+}
+
+/* Listes et pseudo-classes */
+ul li:not(.important) {
+  color: gray;                    /* Tous les li qui n'ont pas la classe .important */
+}
+
+ul li:first-child {
+  color: green;                   /* Premier élément de la liste */
+}
+
+ul li:last-child {
+  color: orange;                  /* Dernier élément de la liste */
+}
+
+ul li:nth-child(2) {
+  text-decoration: underline;     /* Deuxième élément de la liste */
+}
+
+/* Sélecteurs d’attributs */
+input[name] {
+  border: 1px solid gray;         /* Bordure pour tous les inputs avec un attribut name */
+  margin: 5px 0;                  /* Marge verticale pour séparer les inputs */
+  padding: 4px;                   /* Espace interne dans les inputs */
+}
+
+input[type="text"] {
+  background-color: lightyellow;  /* Fond jaune pour les inputs de type texte */
+}
+
+input[type="password"] {
+  background-color: lightpink;    /* Fond rose pour les inputs mot de passe */
+}
+
+input[type^="f"] {
+  font-weight: bold;               /* Inputs dont le type commence par "f" (ex: file) en gras */
+}
+
+a[href$=".pdf"] {
+  color: red;                      /* Liens se terminant par .pdf en rouge */
+}
+
+a[href*="github"] {
+  font-weight: bold;               /* Liens contenant "github" en gras */
+}
+
+/* Boutons et hover */
+button {
+  padding: 8px 15px;               /* Espace à l'intérieur du bouton */
+  border: none;                     /* Pas de bordure */
+  background-color: rebeccapurple;      /* Fond gris clair pour le bouton */
+}
+
+button:hover {
+  background-color: lightblue;      /* Fond bleu clair au survol */
+  cursor: pointer;                  /* Curseur en main au survol */
+}
