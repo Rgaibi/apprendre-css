@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemple Sélecteurs CSS</title>
+  <!-- On relie le fichier CSS -->
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  <h1 class="titre-principal">Exemple de sélecteurs CSS</h1>
+
+  <!-- Exemple descendants et enfants -->
+  <section class="container">
+    <h2>Descendants et enfants directs</h2>
+    <div class="zone">
+      <p>Paragraphe enfant direct</p>
+      <div>
+        <p>Paragraphe descendant (dans un sous-div)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Exemple frères -->
+  <section>
+    <h2>Frères</h2>
+    <h3>Sous-titre</h3>
+    <p>Paragraphe frère direct (juste après h3)</p>
+    <p>Paragraphe frère général (toujours au même niveau)</p>
+  </section>
+
+  <!-- Exemple liste -->
+  <section>
+    <h2>Listes et pseudo-classes</h2>
+    <ul>
+      <li>Premier élément</li>
+      <li class="important">Deuxième élément important</li>
+      <li>Troisième élément</li>
+      <li>Dernier élément</li>
+    </ul>
+  </section>
+
+  <!-- Exemple attributs -->
+  <section>
+    <h2>Sélecteurs d’attributs</h2>
+    <a href="https://github.com">Lien vers GitHub</a><br>
+    <a href="document.pdf">Lien PDF</a><br>
+    <a href="https://example.com">Lien HTTPS</a><br>
+
+    <input type="text" name="username" placeholder="Nom d'utilisateur"><br>
+    <input type="password" name="password" placeholder="Mot de passe"><br>
+    <input type="file" name="fichier"><br>
+    <input type="checkbox" name="cgu" checked> J’accepte les CGU
+  </section>
+
+  <!-- Exemple hover -->
+  <section>
+    <h2>Bouton avec hover</h2>
+    <button>Survole-moi</button>
+  </section>
+
+</body>
+</html>
