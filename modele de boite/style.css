@@ -1,0 +1,68 @@
+/* Style général */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+/* Titres */
+h1, h2 {
+  color: darkblue;
+}
+
+
+/* Block : prend toute la largeur disponible */
+
+.block-box {
+  display: block;            /* Comportement block */
+  width: 300px;              /* Largeur fixe */
+  height: 100px;             /* Hauteur fixe */
+  border: 2px solid black;   /* Bordure */
+  background-color: lightgray; /* Couleur de fond */
+  margin-bottom: 20px;       /* Espace sous la boîte */
+  text-align: center;        /* Centrer le texte */
+  line-height: 100px;        /* Centrer verticalement */
+}
+
+
+/* Inline : ne prend que la place du contenu */
+
+.inline-box {
+  display: inline;           /* Inline : largeur selon le texte */
+  border: 2px solid green;
+  background-color: lightgreen;
+  padding: 5px;              /* Petit padding autour du texte */
+  margin-right: 10px;        /* Espace entre les inline */
+}
+
+
+/* Inline-block : comme inline mais avec largeur/hauteur possible */
+
+.inline-block-box {
+  display: inline-block;     /* Inline-block */
+  width: 150px;
+  height: 80px;
+  border: 2px solid orange;
+  background-color: lightyellow;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 80px;         /* Centrer verticalement */
+}
+
+
+/* Padding et Margin détaillés */
+
+.padding-margin-box {
+  width: 300px;
+  height: 100px;
+  border: 2px solid purple;
+  background-color: #f0e6ff;
+
+  /* Padding : haut droite bas gauche */
+  padding: 10px 15px 10px 15px;
+
+  /* Margin : espace autour de la boîte */
+  margin: 20px 0;  /* 20px en haut et en bas, 0 à gauche et à droite */
+
+  text-align: center;
+  line-height: 100px; /* Pour centrer approximativement le texte verticalement */
+}
