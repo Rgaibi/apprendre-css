@@ -1,0 +1,63 @@
+/* ===== Style global ===== */
+body {
+  font-family: Arial, sans-serif; /* Police générale */
+  margin: 0;                      /* Pas de marge par défaut */
+  padding: 0;
+  background: #f0f0f0;            /* Fond gris clair */
+}
+
+/* ===== Header et navigation ===== */
+.header {
+  display: flex;                   /* Flex pour aligner le titre et la nav */
+  justify-content: space-between;  /* Espace entre le titre et la nav */
+  align-items: center;             /* Centrer verticalement */
+  padding: 20px;
+  background: #333;                /* Fond sombre */
+  color: white;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;               /* Espacement entre liens */
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Section projets ===== */
+.projects {
+  display: flex;                   /* Active Flexbox */
+  flex-wrap: wrap;                 /* Autorise le retour à la ligne */
+  justify-content: space-around;   /* Espaces autour des items */
+  align-items: flex-start;         /* Aligne les projets en haut */
+  padding: 20px;
+  gap: 20px;                       /* Espacement uniforme entre items */
+}
+
+/* ===== Carte projet ===== */
+.project {
+  background: lightblue;
+  padding: 20px;
+  border: 1px solid #333;
+  width: 200px;                    /* Largeur de base */
+  text-align: center;
+  flex: 1 1 200px;                 /* flex-grow:1, flex-shrink:1, flex-basis:200px */
+}
+
+.special {
+  order: -1;                       /* Affiche Projet 3 en premier */
+  align-self: flex-end;            /* S’aligne en bas */
+  flex: 2 1 250px;                 /* Plus large que les autres projets */
+}
+
+/* ===== Footer ===== */
+.footer {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: #333;
+  color: white;
+}
